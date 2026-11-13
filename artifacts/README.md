@@ -1,16 +1,19 @@
-# Shirokai Daycare — candidato 0.1.3
+# Shirokai Daycare — candidato 0.1.4
 
 ## Downloads atuais
 
-- [Mod do servidor 0.1.3](shirokai-daycare-0.1.3-dev.jar)
-- [Pacote branco e ciano 0.1.3](shirokai-daycare-ui-0.1.3.zip)
-- [Textura do menu principal](shirokai-ui-0.1.3-overview-texture.png)
-- [Textura da tela do casal](shirokai-ui-0.1.3-couple-texture.png)
+- [Mod do servidor 0.1.4](shirokai-daycare-0.1.4-dev.jar)
+- [Pacote branco e ciano 0.1.4](shirokai-daycare-ui-0.1.4.zip)
+- [Textura do menu principal](shirokai-ui-0.1.4-overview-texture.png)
+- [Textura da tela do casal](shirokai-ui-0.1.4-couple-texture.png)
 - `SHA256SUMS`: checksums dos artefatos.
 
 As prévias mostram somente as texturas; não são capturas do Minecraft.
 
 ## O que mudou
+
+0.1.4 melhora o formato do ovo 3D com dez camadas e textura branca com manchas
+verdes originais. O tema do menu permanece branco/ciano.
 
 Menus branco/ciano, sem figura lateral, com seis posições de casal e seis de
 incubação sempre visíveis. Grades indicam espaços bloqueados; o tooltip informa
@@ -37,7 +40,7 @@ Jogadores existentes continuam no modo automático até escolherem manual.
 ## Atualização segura
 
 1. Pare o servidor e faça backup do mundo e dos dados do Daycare.
-2. Remova os JARs antigos do Daycare de `mods/` e instale **somente** o 0.1.3.
+2. Remova os JARs antigos do Daycare de `mods/` e instale **somente** o 0.1.4.
 3. Reinicie, reconecte e aceite o novo pacote visual.
 4. O banco antigo é lido e atualizado para guardar ovos nos casais. Após atualizar,
    **não volte a um JAR antigo com o banco novo**. Para reverter, restaure também
@@ -78,8 +81,8 @@ Runtime dedicado: Minecraft 1.21.1, Java 21, Fabric Loader 0.17.2,
 Fabric API 0.116.6+1.21.1, Cobblemon 1.8.3, Impactor Fabric 5.3.5 e
 LuckPerms Fabric 5.4.140. SQLite incluído no JAR.
 
-Passaram 44 testes Java, cinco testes Python e 85 verificações no servidor
-dedicado. O teste manual usou dois casais, uma vaga e recarga real do SQLite.
+0.1.4: compilação, 44 testes Java e cinco testes Python. O teste dedicado da
+0.1.3 passou em 85 verificações; não foi repetido para esta alteração visual. O teste manual usou dois casais, uma vaga e recarga real do SQLite.
 Resultados: [validation-0.1.3.json](validation-0.1.3.json). Aparência final e transformação dos modelos precisam de conferência
 no cliente autenticado. Este é um candidato de homologação; não foi criado
 GitHub Release. Testes de carga multiplayer e crashes reais em todas as etapas
