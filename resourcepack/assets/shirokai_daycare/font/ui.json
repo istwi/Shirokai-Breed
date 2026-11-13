@@ -1,0 +1,47 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "shirokai_daycare:gui/overview.png",
+      "ascent": 13,
+      "height": 256,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "shirokai_daycare:gui/couple.png",
+      "ascent": 13,
+      "height": 256,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "shirokai_daycare:gui/confirmation.png",
+      "ascent": 13,
+      "height": 256,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "shirokai_daycare:gui/selection.png",
+      "ascent": 13,
+      "height": 256,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "space",
+      "advances": {
+        "": -72,
+        "": -169
+      }
+    }
+  ]
+}
