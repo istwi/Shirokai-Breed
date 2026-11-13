@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/knowledge_book"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 7301001
+      },
+      "model": "shirokai_daycare:item/egg_small"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301002
+      },
+      "model": "shirokai_daycare:item/egg_large"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301003
+      },
+      "model": "shirokai_daycare:item/book_base"
+    }
+  ]
+}

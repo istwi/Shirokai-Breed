@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:builtin/entity",
+  "gui_light": "side",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 7301011
+      },
+      "model": "shirokai_daycare:item/pokemon_large"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301012
+      },
+      "model": "shirokai_daycare:item/pokemon_base"
+    }
+  ]
+}
