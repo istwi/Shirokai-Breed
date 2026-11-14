@@ -1,0 +1,14 @@
+{
+  "version": "0.1.10-dev",
+  "java_tests_passed": 44,
+  "python_tests_passed": 8,
+  "dedicated_server_rerun": false,
+  "changes": [
+    "Semantic tooltip colors, sentence-case titles, readable names and labeled IVs, state-specific action descriptions.",
+    "Only next locked slot offers purchase at captured displayed quote; future slots show prerequisite.",
+    "Entire player inventory region transparent in pack bitmap, revealing native background and hotbar. Top menu preserved."
+  ],
+  "limitations": [
+    "Final tooltip appearance and native inventory transition require authenticated client review. Dedicated suite last run on 0.1.6."
+  ]
+}
