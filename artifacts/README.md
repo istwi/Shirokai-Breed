@@ -1,19 +1,32 @@
-# Shirokai Daycare — candidato 0.1.4
+# Shirokai Daycare — candidato 0.1.5
 
 ## Downloads atuais
 
-- [Mod do servidor 0.1.4](shirokai-daycare-0.1.4-dev.jar)
-- [Pacote branco e ciano 0.1.4](shirokai-daycare-ui-0.1.4.zip)
-- [Textura do menu principal](shirokai-ui-0.1.4-overview-texture.png)
-- [Textura da tela do casal](shirokai-ui-0.1.4-couple-texture.png)
+- [Mod do servidor 0.1.5](shirokai-daycare-0.1.5-dev.jar)
+- [Pacote branco e ciano 0.1.5](shirokai-daycare-ui-0.1.5.zip)
+- [Textura do menu principal](shirokai-ui-0.1.5-overview-texture.png)
+- [Textura da tela do casal](shirokai-ui-0.1.5-couple-texture.png)
 - `SHA256SUMS`: checksums dos artefatos.
 
 As prévias mostram somente as texturas; não são capturas do Minecraft.
 
 ## O que mudou
 
-0.1.4 melhora o formato do ovo 3D com dez camadas e textura branca com manchas
-verdes originais. O tema do menu permanece branco/ciano.
+0.1.5 remove os botões secundários marcados nas imagens e as telas de confirmação.
+O clique executa a ação diretamente, incluindo compras pelo preço informado no
+próprio tooltip. A tela do casal mantém os dois pais, ovo grande e um botão de
+ovo no rodapé para abrir a chocadeira. Os menus principais mantêm apenas o botão
+central de navegação. O ovo pronto da tela de incubação coleta ao clicar nele.
+
+Clicar no modelo de um pai retira somente aquele Pokémon. O outro permanece
+em custódia, com reprodução pausada. Clique no espaço vazio para selecionar um
+parceiro compatível após o cooldown de troca. Retirar o último libera o casal.
+Itens e atributos continuam preservados; ovos pendentes devem ser enviados antes
+da retirada. Ações ainda verificam capacidade, permissão e operação pendente.
+
+Ovo 3D branco/verde com dez camadas. Corrigida a referência da textura para a
+pasta `textures/item/`, incluída no atlas de itens. As janelas dos modelos têm
+fundo colorido para esconder as grades vanilla que apareciam atrás dos pais.
 
 Menus branco/ciano, sem figura lateral, com seis posições de casal e seis de
 incubação sempre visíveis. Grades indicam espaços bloqueados; o tooltip informa
@@ -24,9 +37,10 @@ incubação, coleta, capacidade, pagamento e pausa quando a chocadeira está che
 
 ## Escolher qual ovo chocar
 
-1. Abra `/breed` e clique em **ENTREGA: AUTOMÁTICA**, no rodapé.
-2. Confirme **manual**. Cada casal passa a guardar no máximo um ovo pronto.
-3. Abra o casal escolhido, clique no ovo central e confirme o envio à chocadeira.
+1. Use `/breed entrega` para alternar entre manual e automático, sem confirmação.
+   O chat informa o modo atual após a troca.
+2. Em manual, cada casal guarda no máximo um ovo pronto.
+3. Abra o casal escolhido e clique no ovo grande para enviá-lo imediatamente.
 4. Sem vaga, o ovo continua no casal. Ele só incuba após o envio, enquanto o dono
    estiver online. A genética e o UUID já definidos não mudam com a escolha.
 5. Colete o Pokémon pronto na chocadeira para liberar a vaga. Casais só voltam
@@ -40,9 +54,9 @@ Jogadores existentes continuam no modo automático até escolherem manual.
 ## Atualização segura
 
 1. Pare o servidor e faça backup do mundo e dos dados do Daycare.
-2. Remova os JARs antigos do Daycare de `mods/` e instale **somente** o 0.1.4.
+2. Remova os JARs antigos do Daycare de `mods/` e instale **somente** o 0.1.5.
 3. Reinicie, reconecte e aceite o novo pacote visual.
-4. O banco antigo é lido e atualizado para guardar ovos nos casais. Após atualizar,
+4. O banco antigo é atualizado para formato 3, que permite um pai aguardando parceiro. Após atualizar,
    **não volte a um JAR antigo com o banco novo**. Para reverter, restaure também
    o backup anterior completo, com servidor parado.
 
@@ -81,9 +95,10 @@ Runtime dedicado: Minecraft 1.21.1, Java 21, Fabric Loader 0.17.2,
 Fabric API 0.116.6+1.21.1, Cobblemon 1.8.3, Impactor Fabric 5.3.5 e
 LuckPerms Fabric 5.4.140. SQLite incluído no JAR.
 
-0.1.4: compilação, 44 testes Java e cinco testes Python. O teste dedicado da
-0.1.3 passou em 85 verificações; não foi repetido para esta alteração visual. O teste manual usou dois casais, uma vaga e recarga real do SQLite.
-Resultados: [validation-0.1.3.json](validation-0.1.3.json). Aparência final e transformação dos modelos precisam de conferência
-no cliente autenticado. Este é um candidato de homologação; não foi criado
-GitHub Release. Testes de carga multiplayer e crashes reais em todas as etapas
-continuam pendentes.
+Passaram 44 testes Java, seis testes Python e 94 verificações no servidor dedicado.
+Resultados desta versão: [validation-0.1.5.json](validation-0.1.5.json).
+O teste dedicado inclui retirada individual com falha injetada após gravação
+externa, recarga SQLite, reposição do parceiro e retirada do último pai.
+A aparência final depende de conferência em cliente autenticado. Este é um
+candidato de homologação; não foi criado GitHub Release. Carga multiplayer,
+login autenticado e crashes reais em todas as etapas continuam pendentes.
