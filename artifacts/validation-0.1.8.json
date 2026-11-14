@@ -1,0 +1,13 @@
+{
+  "version": "0.1.8-dev",
+  "java_tests_passed": 44,
+  "python_tests_passed": 7,
+  "dedicated_server_rerun": false,
+  "changes": [
+    "Visual-only update: original cream and moss-green stepped patches, no cyan glints; GUI rotation 30/225 degrees.",
+    "Uses client-provided minecraft:block/dragon_egg geometry. Manual egg transfer and no replacement delay retained."
+  ],
+  "limitations": [
+    "Final visual not checked in authenticated client. Dedicated server suite last run on 0.1.6."
+  ]
+}

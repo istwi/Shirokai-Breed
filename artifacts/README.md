@@ -1,12 +1,12 @@
-# Shirokai Daycare — candidato 0.1.7
+# Shirokai Daycare — candidato 0.1.8
 
 ## Downloads atuais
 
-- [Mod do servidor 0.1.7](shirokai-daycare-0.1.7-dev.jar)
-- [Pacote branco e ciano 0.1.7](shirokai-daycare-ui-0.1.7.zip)
-- [Textura do menu principal](shirokai-ui-0.1.7-overview-texture.png)
-- [Textura da tela do casal](shirokai-ui-0.1.7-couple-texture.png)
-- [Textura da incubadora](shirokai-ui-0.1.7-incubation-texture.png)
+- [Mod do servidor 0.1.8](shirokai-daycare-0.1.8-dev.jar)
+- [Pacote branco e ciano 0.1.8](shirokai-daycare-ui-0.1.8.zip)
+- [Textura do menu principal](shirokai-ui-0.1.8-overview-texture.png)
+- [Textura da tela do casal](shirokai-ui-0.1.8-couple-texture.png)
+- [Textura da incubadora](shirokai-ui-0.1.8-incubation-texture.png)
 - [Textura do ovo Shirokai](../resourcepack/assets/shirokai_daycare/textures/item/egg_dragon_shirokai.png)
 - `SHA256SUMS`: checksums dos artefatos.
 
@@ -14,9 +14,10 @@ As prévias mostram somente as texturas; não são capturas do Minecraft.
 
 ## O que mudou
 
-0.1.7 usa a geometria 3D do ovo do Ender Dragon já presente no cliente,
-referenciada por `minecraft:block/dragon_egg`, com textura original branca/verde,
-sombras suaves em pixel art e pequenos brilhos ciano. A geometria e a textura
+0.1.8 ajusta a paleta, manchas e ângulo para se aproximar da referência enviada.
+Usa a geometria 3D do ovo do Ender Dragon já presente no cliente,
+referenciada por `minecraft:block/dragon_egg`, com textura original em creme e verde musgo,
+manchas maiores em blocos e sem brilhos ciano, seguindo a referência mais recente. A geometria e a textura
 vanilla não são redistribuídas; o modelo do Shirokai apenas herda a geometria e
 substitui a textura `all`. A alteração não muda o ovo do Ender Dragon no mundo.
 
@@ -66,7 +67,7 @@ continua pausando a reprodução, sem descartar ovos guardados.
 ## Atualização segura
 
 1. Pare o servidor e faça backup do mundo e dos dados do Daycare.
-2. Remova os JARs antigos do Daycare de `mods/` e instale **somente** o 0.1.7.
+2. Remova os JARs antigos do Daycare de `mods/` e instale **somente** o 0.1.8.
 3. Reinicie, reconecte e aceite o novo pacote visual.
 4. O banco antigo é atualizado para formato 3, que permite um pai aguardando parceiro. Após atualizar,
    **não volte a um JAR antigo com o banco novo**. Para reverter, restaure também
@@ -107,9 +108,9 @@ Runtime dedicado: Minecraft 1.21.1, Java 21, Fabric Loader 0.17.2,
 Fabric API 0.116.6+1.21.1, Cobblemon 1.8.3, Impactor Fabric 5.3.5 e
 LuckPerms Fabric 5.4.140. SQLite incluído no JAR.
 
-0.1.7: compilação, 44 testes Java e sete testes Python. As 97 verificações no
+0.1.8: compilação, 44 testes Java e sete testes Python. As 97 verificações no
 servidor dedicado foram executadas na 0.1.6; não foram repetidas nesta versão.
-Resultados desta versão: [validation-0.1.7.json](validation-0.1.7.json).
+Resultados desta versão: [validation-0.1.8.json](validation-0.1.8.json).
 O teste dedicado verifica que uma configuração antiga de envio automático não
 envia ovos sem clique, além de retirada individual com falha injetada após gravação
 externa, recarga SQLite, reposição do parceiro e retirada do último pai.
