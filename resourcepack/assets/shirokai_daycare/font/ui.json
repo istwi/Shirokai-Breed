@@ -37,6 +37,15 @@
       ]
     },
     {
+      "type": "bitmap",
+      "file": "shirokai_daycare:gui/incubation.png",
+      "ascent": 13,
+      "height": 256,
+      "chars": [
+        ""
+      ]
+    },
+    {
       "type": "space",
       "advances": {
         "": -8,
