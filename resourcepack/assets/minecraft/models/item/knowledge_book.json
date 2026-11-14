@@ -21,6 +21,114 @@
         "custom_model_data": 7301003
       },
       "model": "shirokai_daycare:item/book_base"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301050
+      },
+      "model": "shirokai_daycare:item/plus"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301051
+      },
+      "model": "shirokai_daycare:item/book_base"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301100
+      },
+      "model": "shirokai_daycare:item/card_free"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301101
+      },
+      "model": "shirokai_daycare:item/card_locked"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301102
+      },
+      "model": "shirokai_daycare:item/card_ready"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301110
+      },
+      "model": "shirokai_daycare:item/card_active"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301120
+      },
+      "model": "shirokai_daycare:item/card_progress_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301121
+      },
+      "model": "shirokai_daycare:item/card_progress_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301122
+      },
+      "model": "shirokai_daycare:item/card_progress_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301123
+      },
+      "model": "shirokai_daycare:item/card_progress_3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301124
+      },
+      "model": "shirokai_daycare:item/card_progress_4"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301125
+      },
+      "model": "shirokai_daycare:item/card_progress_5"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301126
+      },
+      "model": "shirokai_daycare:item/card_progress_6"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301127
+      },
+      "model": "shirokai_daycare:item/card_progress_7"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301128
+      },
+      "model": "shirokai_daycare:item/card_progress_8"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301129
+      },
+      "model": "shirokai_daycare:item/card_progress_9"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301130
+      },
+      "model": "shirokai_daycare:item/card_progress_10"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7301131
+      },
+      "model": "shirokai_daycare:item/book_base"
     }
   ]
 }

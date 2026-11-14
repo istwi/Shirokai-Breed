@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "shirokai_daycare:item/card_progress_2"
+  },
+  "display": {
+    "gui": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        18,
+        0,
+        -8
+      ],
+      "scale": [
+        2.125,
+        2.125,
+        2.125
+      ]
+    }
+  }
+}
