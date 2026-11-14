@@ -1,0 +1,13 @@
+{
+  "version": "0.1.11-dev",
+  "java_tests_passed": 44,
+  "python_tests_passed": 8,
+  "dedicated_server_rerun": false,
+  "changes": [
+    "Restore all five Shirokai menu background PNGs byte-for-byte to version 0.1.9.",
+    "Keep colored lores, purchase UI and all behavior from 0.1.10. Egg model unchanged."
+  ],
+  "limitations": [
+    "Final client appearance not verified in this session."
+  ]
+}

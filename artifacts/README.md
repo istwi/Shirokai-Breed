@@ -1,12 +1,12 @@
-# Shirokai Daycare — candidato 0.1.10
+# Shirokai Daycare — candidato 0.1.11
 
 ## Downloads atuais
 
-- [Mod do servidor 0.1.10](shirokai-daycare-0.1.10-dev.jar)
-- [Pacote branco e ciano 0.1.10](shirokai-daycare-ui-0.1.10.zip)
-- [Textura do menu principal](shirokai-ui-0.1.10-overview-texture.png)
-- [Textura da tela do casal](shirokai-ui-0.1.10-couple-texture.png)
-- [Textura da incubadora](shirokai-ui-0.1.10-incubation-texture.png)
+- [Mod do servidor 0.1.11](shirokai-daycare-0.1.11-dev.jar)
+- [Pacote branco e ciano 0.1.11](shirokai-daycare-ui-0.1.11.zip)
+- [Textura do menu principal](shirokai-ui-0.1.11-overview-texture.png)
+- [Textura da tela do casal](shirokai-ui-0.1.11-couple-texture.png)
+- [Textura da incubadora](shirokai-ui-0.1.11-incubation-texture.png)
 - [Textura do ovo Shirokai](../resourcepack/assets/shirokai_daycare/textures/item/egg_dragon_shirokai.png)
 - `SHA256SUMS`: checksums dos artefatos.
 
@@ -14,7 +14,8 @@ As prévias mostram somente as texturas; não são capturas do Minecraft.
 
 ## O que mudou
 
-0.1.10 revisa os nomes, textos e cores dos tooltips. Descrições em cinza,
+0.1.11 restaura somente os fundos da textura 0.1.9, mantendo os nomes, textos
+e cores dos tooltips da 0.1.10. Descrições em cinza,
 valores em branco, ações em ciano, estados prontos em verde e avisos em amarelo.
 Títulos curtos, em caixa normal, com linhas vazias entre informações e ações.
 Os textos diferenciam ovo guardado, ovo incubando, parceiro ausente e sistema
@@ -25,11 +26,10 @@ Apenas o próximo espaço bloqueado permite compra; o preço já considera o VIP
 quando aplicável e o tooltip avisa que o clique compra imediatamente. Espaços
 posteriores explicam qual desbloqueio vem primeiro, sem cobrar por outro espaço.
 
-O topo do menu mantém branco/ciano. A área inteira do inventário do jogador,
-incluindo nome, slots e hotbar, fica transparente na fonte do pacote para revelar
-a textura normal do cliente. Isso também respeita outro pacote que altere o
-inventário vanilla. O visual do ovo é mantido, assim como envio por clique,
-retirada individual e substituição sem espera.
+O visual Shirokai branco/ciano volta a envolver o menu inteiro, inclusive a
+área do inventário e hotbar, como na 0.1.9. Os cinco fundos PNG foram comparados
+byte a byte com o pacote 0.1.9. As lores coloridas e todas as funções atuais
+continuam iguais às da 0.1.10. O modelo do ovo também permanece igual.
 
 Removido o tempo para trocar os pais. A retirada individual e a retirada do
 casal não criam mais cooldown; tempos antigos salvos são descartados ao carregar
@@ -77,7 +77,7 @@ continua pausando a reprodução, sem descartar ovos guardados.
 ## Atualização segura
 
 1. Pare o servidor e faça backup do mundo e dos dados do Daycare.
-2. Remova os JARs antigos do Daycare de `mods/` e instale **somente** o 0.1.10.
+2. Remova os JARs antigos do Daycare de `mods/` e instale **somente** o 0.1.11.
 3. Reinicie, reconecte e aceite o novo pacote visual.
 4. O banco antigo é atualizado para formato 3, que permite um pai aguardando parceiro. Após atualizar,
    **não volte a um JAR antigo com o banco novo**. Para reverter, restaure também
@@ -118,9 +118,9 @@ Runtime dedicado: Minecraft 1.21.1, Java 21, Fabric Loader 0.17.2,
 Fabric API 0.116.6+1.21.1, Cobblemon 1.8.3, Impactor Fabric 5.3.5 e
 LuckPerms Fabric 5.4.140. SQLite incluído no JAR.
 
-0.1.10: compilação, 44 testes Java e oito testes Python. As 97 verificações no
+0.1.11: compilação, 44 testes Java e oito testes Python. As 97 verificações no
 servidor dedicado foram executadas na 0.1.6; não foram repetidas nesta versão.
-Resultados desta versão: [validation-0.1.10.json](validation-0.1.10.json).
+Resultados desta versão: [validation-0.1.11.json](validation-0.1.11.json).
 O teste dedicado verifica que uma configuração antiga de envio automático não
 envia ovos sem clique, além de retirada individual com falha injetada após gravação
 externa, recarga SQLite, reposição do parceiro e retirada do último pai.
