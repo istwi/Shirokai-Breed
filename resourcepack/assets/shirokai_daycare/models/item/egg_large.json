@@ -1,15 +1,15 @@
 {
-  "parent": "minecraft:item/generated",
-  "gui_light": "front",
+  "parent": "minecraft:block/dragon_egg",
+  "gui_light": "side",
   "textures": {
-    "layer0": "shirokai_daycare:item/egg_cartoon",
-    "particle": "shirokai_daycare:item/egg_cartoon"
+    "all": "shirokai_daycare:item/egg_dragon_shirokai",
+    "particle": "shirokai_daycare:item/egg_dragon_shirokai"
   },
   "display": {
     "gui": {
       "rotation": [
-        0,
-        0,
+        15,
+        30,
         0
       ],
       "translation": [
@@ -18,9 +18,9 @@
         0
       ],
       "scale": [
-        2.1,
-        2.1,
-        2.1
+        1.85,
+        1.85,
+        1.85
       ]
     }
   }

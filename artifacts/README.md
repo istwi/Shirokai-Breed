@@ -1,22 +1,29 @@
-# Shirokai Daycare — candidato 0.1.6
+# Shirokai Daycare — candidato 0.1.7
 
 ## Downloads atuais
 
-- [Mod do servidor 0.1.6](shirokai-daycare-0.1.6-dev.jar)
-- [Pacote branco e ciano 0.1.6](shirokai-daycare-ui-0.1.6.zip)
-- [Textura do menu principal](shirokai-ui-0.1.6-overview-texture.png)
-- [Textura da tela do casal](shirokai-ui-0.1.6-couple-texture.png)
-- [Textura da incubadora](shirokai-ui-0.1.6-incubation-texture.png)
-- [Arte do ovo cartoon](../resourcepack/assets/shirokai_daycare/textures/item/egg_cartoon.png)
+- [Mod do servidor 0.1.7](shirokai-daycare-0.1.7-dev.jar)
+- [Pacote branco e ciano 0.1.7](shirokai-daycare-ui-0.1.7.zip)
+- [Textura do menu principal](shirokai-ui-0.1.7-overview-texture.png)
+- [Textura da tela do casal](shirokai-ui-0.1.7-couple-texture.png)
+- [Textura da incubadora](shirokai-ui-0.1.7-incubation-texture.png)
+- [Textura do ovo Shirokai](../resourcepack/assets/shirokai_daycare/textures/item/egg_dragon_shirokai.png)
 - `SHA256SUMS`: checksums dos artefatos.
 
 As prévias mostram somente as texturas; não são capturas do Minecraft.
 
 ## O que mudou
 
-0.1.6 substitui o ovo de camadas por uma arte cartoon original branca/verde,
-com contorno e brilho. A arte é um ícone frontal com a espessura gerada pelo
-modelo vanilla de itens; não utiliza a geometria de camadas da versão anterior.
+0.1.7 usa a geometria 3D do ovo do Ender Dragon já presente no cliente,
+referenciada por `minecraft:block/dragon_egg`, com textura original branca/verde,
+sombras suaves em pixel art e pequenos brilhos ciano. A geometria e a textura
+vanilla não são redistribuídas; o modelo do Shirokai apenas herda a geometria e
+substitui a textura `all`. A alteração não muda o ovo do Ender Dragon no mundo.
+
+Removido o tempo para trocar os pais. A retirada individual e a retirada do
+casal não criam mais cooldown; tempos antigos salvos são descartados ao carregar
+o jogador. `replacementCooldownSeconds` antigo é ignorado para a troca.
+
 A tela individual da incubadora mostra só o ovo central e o botão de navegação,
 sem os pais nem molduras laterais. IDs de ovos foram removidos dos tooltips.
 
@@ -32,14 +39,14 @@ central de navegação; o ovo pronto da incubadora coleta ao clicar nele.
 
 Clicar no modelo de um pai retira somente aquele Pokémon. O outro permanece
 em custódia, com reprodução pausada. Clique no espaço vazio para selecionar um
-parceiro compatível após o cooldown de troca. Retirar o último libera o casal.
+parceiro compatível imediatamente. Retirar o último libera o casal.
 Itens e atributos continuam preservados; ovos pendentes devem ser enviados antes
 da retirada. Ações ainda verificam capacidade, permissão e operação pendente.
 
 Menus branco/ciano, sem figura lateral, com seis posições de casal e seis de
 incubação sempre visíveis. Grades indicam espaços bloqueados; o tooltip informa
 a ordem de compra, próximo espaço e preço. Reprodução e chocadeira têm navegação
-central entre si, com ovo cartoon original e ícone Pokémon do próprio Cobblemon.
+central entre si, com ovo 3D usando o modelo vanilla e ícone Pokémon do próprio Cobblemon.
 A tela individual mostra os dois pais e o ovo central. Os tooltips explicam
 incubação, coleta, capacidade, pagamento e pausa quando a chocadeira está cheia.
 
@@ -59,7 +66,7 @@ continua pausando a reprodução, sem descartar ovos guardados.
 ## Atualização segura
 
 1. Pare o servidor e faça backup do mundo e dos dados do Daycare.
-2. Remova os JARs antigos do Daycare de `mods/` e instale **somente** o 0.1.6.
+2. Remova os JARs antigos do Daycare de `mods/` e instale **somente** o 0.1.7.
 3. Reinicie, reconecte e aceite o novo pacote visual.
 4. O banco antigo é atualizado para formato 3, que permite um pai aguardando parceiro. Após atualizar,
    **não volte a um JAR antigo com o banco novo**. Para reverter, restaure também
@@ -87,7 +94,7 @@ Em `config/shirokai-daycare/config.json`, `resourcePackEnabled: true` e
 antiga, substitua URL e SHA-1 juntos ou deixe a URL vazia. Remova/desative o pacote
 Shirokai antigo instalado manualmente e reconecte para aceitar a nova versão.
 
-O ovo cartoon é uma criação visual original deste pacote, não um ovo nativo na equipe.
+A textura do ovo é original; a geometria vem do cliente Minecraft. Não é um ovo nativo na equipe.
 Pokémon usam a API pública PokemonItem e o renderizador do Cobblemon instalado.
 Não há assets das referências, do Daycare+ ou do Cobbreeding. O pacote inclui dois
 wrappers condicionais de modelos (`knowledge_book` e `cobblemon:pokemon_model`)
@@ -100,8 +107,9 @@ Runtime dedicado: Minecraft 1.21.1, Java 21, Fabric Loader 0.17.2,
 Fabric API 0.116.6+1.21.1, Cobblemon 1.8.3, Impactor Fabric 5.3.5 e
 LuckPerms Fabric 5.4.140. SQLite incluído no JAR.
 
-Passaram 44 testes Java, sete testes Python e 97 verificações no servidor dedicado.
-Resultados desta versão: [validation-0.1.6.json](validation-0.1.6.json).
+0.1.7: compilação, 44 testes Java e sete testes Python. As 97 verificações no
+servidor dedicado foram executadas na 0.1.6; não foram repetidas nesta versão.
+Resultados desta versão: [validation-0.1.7.json](validation-0.1.7.json).
 O teste dedicado verifica que uma configuração antiga de envio automático não
 envia ovos sem clique, além de retirada individual com falha injetada após gravação
 externa, recarga SQLite, reposição do parceiro e retirada do último pai.

@@ -1,0 +1,15 @@
+{
+  "version": "0.1.7-dev",
+  "java_tests_passed": 44,
+  "python_tests_passed": 7,
+  "dedicated_server_rerun": false,
+  "previous_dedicated_report": "validation-0.1.6.json",
+  "changes": [
+    "Egg model references minecraft:block/dragon_egg; verified official client model uses texture variable all. Only original custom texture and parent references distributed.",
+    "Individual and couple withdrawal no longer set replacement delay; stored old cooldowns cleared and deposit guards removed."
+  ],
+  "limitations": [
+    "Final model appearance not tested in authenticated client.",
+    "Dedicated checks from 0.1.6 were not rerun for this update."
+  ]
+}
