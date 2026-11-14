@@ -1,12 +1,12 @@
-# Shirokai Daycare — candidato 0.1.8
+# Shirokai Daycare — candidato 0.1.9
 
 ## Downloads atuais
 
-- [Mod do servidor 0.1.8](shirokai-daycare-0.1.8-dev.jar)
-- [Pacote branco e ciano 0.1.8](shirokai-daycare-ui-0.1.8.zip)
-- [Textura do menu principal](shirokai-ui-0.1.8-overview-texture.png)
-- [Textura da tela do casal](shirokai-ui-0.1.8-couple-texture.png)
-- [Textura da incubadora](shirokai-ui-0.1.8-incubation-texture.png)
+- [Mod do servidor 0.1.9](shirokai-daycare-0.1.9-dev.jar)
+- [Pacote branco e ciano 0.1.9](shirokai-daycare-ui-0.1.9.zip)
+- [Textura do menu principal](shirokai-ui-0.1.9-overview-texture.png)
+- [Textura da tela do casal](shirokai-ui-0.1.9-couple-texture.png)
+- [Textura da incubadora](shirokai-ui-0.1.9-incubation-texture.png)
 - [Textura do ovo Shirokai](../resourcepack/assets/shirokai_daycare/textures/item/egg_dragon_shirokai.png)
 - `SHA256SUMS`: checksums dos artefatos.
 
@@ -14,12 +14,15 @@ As prévias mostram somente as texturas; não são capturas do Minecraft.
 
 ## O que mudou
 
-0.1.8 ajusta a paleta, manchas e ângulo para se aproximar da referência enviada.
-Usa a geometria 3D do ovo do Ender Dragon já presente no cliente,
-referenciada por `minecraft:block/dragon_egg`, com textura original em creme e verde musgo,
-manchas maiores em blocos e sem brilhos ciano, seguindo a referência mais recente. A geometria e a textura
-vanilla não são redistribuídas; o modelo do Shirokai apenas herda a geometria e
-substitui a textura `all`. A alteração não muda o ovo do Ender Dragon no mundo.
+0.1.9 ajusta a geometria do ovo para a referência: corpo compacto e largo,
+base estreita, seis degraus maiores e topo achatado. Modelo original com textura
+creme e manchas verde musgo; as faces superiores têm casca creme separada para
+não repetir manchas no topo de cada degrau. Mantém orientação 30/225 graus.
+O modelo não herda mais a geometria do Ender Dragon: usa elementos próprios.
+
+[Prévia do formato](shirokai-egg-0.1.9-model-preview.png): renderização ortográfica
+independente para conferir a silhueta, não captura do Minecraft. Iluminação,
+textura e escala finais podem variar no cliente.
 
 Removido o tempo para trocar os pais. A retirada individual e a retirada do
 casal não criam mais cooldown; tempos antigos salvos são descartados ao carregar
@@ -67,7 +70,7 @@ continua pausando a reprodução, sem descartar ovos guardados.
 ## Atualização segura
 
 1. Pare o servidor e faça backup do mundo e dos dados do Daycare.
-2. Remova os JARs antigos do Daycare de `mods/` e instale **somente** o 0.1.8.
+2. Remova os JARs antigos do Daycare de `mods/` e instale **somente** o 0.1.9.
 3. Reinicie, reconecte e aceite o novo pacote visual.
 4. O banco antigo é atualizado para formato 3, que permite um pai aguardando parceiro. Após atualizar,
    **não volte a um JAR antigo com o banco novo**. Para reverter, restaure também
@@ -95,7 +98,7 @@ Em `config/shirokai-daycare/config.json`, `resourcePackEnabled: true` e
 antiga, substitua URL e SHA-1 juntos ou deixe a URL vazia. Remova/desative o pacote
 Shirokai antigo instalado manualmente e reconecte para aceitar a nova versão.
 
-A textura do ovo é original; a geometria vem do cliente Minecraft. Não é um ovo nativo na equipe.
+A textura e a geometria do ovo são originais. Não é um ovo nativo na equipe.
 Pokémon usam a API pública PokemonItem e o renderizador do Cobblemon instalado.
 Não há assets das referências, do Daycare+ ou do Cobbreeding. O pacote inclui dois
 wrappers condicionais de modelos (`knowledge_book` e `cobblemon:pokemon_model`)
@@ -108,9 +111,9 @@ Runtime dedicado: Minecraft 1.21.1, Java 21, Fabric Loader 0.17.2,
 Fabric API 0.116.6+1.21.1, Cobblemon 1.8.3, Impactor Fabric 5.3.5 e
 LuckPerms Fabric 5.4.140. SQLite incluído no JAR.
 
-0.1.8: compilação, 44 testes Java e sete testes Python. As 97 verificações no
+0.1.9: compilação, 44 testes Java e sete testes Python. As 97 verificações no
 servidor dedicado foram executadas na 0.1.6; não foram repetidas nesta versão.
-Resultados desta versão: [validation-0.1.8.json](validation-0.1.8.json).
+Resultados desta versão: [validation-0.1.9.json](validation-0.1.9.json).
 O teste dedicado verifica que uma configuração antiga de envio automático não
 envia ovos sem clique, além de retirada individual com falha injetada após gravação
 externa, recarga SQLite, reposição do parceiro e retirada do último pai.

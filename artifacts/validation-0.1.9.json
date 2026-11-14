@@ -1,0 +1,15 @@
+{
+  "version": "0.1.9-dev",
+  "java_tests_passed": 44,
+  "python_tests_passed": 7,
+  "dedicated_server_rerun": false,
+  "changes": [
+    "Original compact six-step mesh: broad middle, narrow base, flat crown.",
+    "Cream top faces use separate texture; moss green patches on side faces.",
+    "Manual transfer, direct actions, hidden IDs and immediate parent replacement retained."
+  ],
+  "preview": "Independent orthographic software render of the mesh; not a Minecraft screenshot.",
+  "limitations": [
+    "Final appearance requires authenticated client verification. Dedicated suite last run on 0.1.6."
+  ]
+}
