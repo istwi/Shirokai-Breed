@@ -1,0 +1,117 @@
+{
+  "repository": "istwi/Shirokai-Breed",
+  "remote_branches": {
+    "main": "34df976fcfc495ae938eee08a29b8ffc9bd66ac2"
+  },
+  "base_version": "0.1.12-dev",
+  "source_jar_sha256": "f1a3218ccdb2ab98486efe8081fcdd88fe6cc2725824adb70562c7496553418e",
+  "output_jar_sha256": "2ba8acdda28047b8e2f1201ffe648a7b1f798c35904bdb668955f3049fa8e8f6",
+  "changes": [
+    {
+      "entry": "dev/shirokai/daycare/DaycareService.class",
+      "constant_index": 460,
+      "before": "Shirokai: dados em inicialização; reconecte em instantes.",
+      "after": "Zorykai: dados em inicialização; reconecte em instantes."
+    },
+    {
+      "entry": "dev/shirokai/daycare/ShirokaiDaycare.class",
+      "constant_index": 794,
+      "before": "✦ /breed: deposite um casal da equipe/PC. /chocadeira: incube e colete. Só progride online. /breed entrega: instruções de envio manual. Ações diretas ao clicar.",
+      "after": "§f§l✦ ZORYKAI§r§7 /breed: deposite um casal da equipe/PC. /chocadeira: incube e colete. Só progride online. /breed entrega: instruções de envio manual. Ações diretas ao clicar."
+    },
+    {
+      "entry": "dev/shirokai/daycare/config/Settings$Messages.class",
+      "constant_index": 27,
+      "before": "✦ Shirokai » ",
+      "after": "§f§l✦ Zorykai§r§7 » "
+    },
+    {
+      "entry": "dev/shirokai/daycare/config/Settings.class",
+      "constant_index": 382,
+      "before": "Shirokai: \u0001",
+      "after": "Zorykai: \u0001"
+    },
+    {
+      "entry": "dev/shirokai/daycare/ui/DaycareMenus.class",
+      "constant_index": 123,
+      "before": "Shirokai • Reprodução",
+      "after": "Zorykai • Reprodução"
+    },
+    {
+      "entry": "dev/shirokai/daycare/ui/DaycareMenus.class",
+      "constant_index": 143,
+      "before": "Shirokai • Chocadeira",
+      "after": "Zorykai • Chocadeira"
+    },
+    {
+      "entry": "dev/shirokai/daycare/ui/DaycareMenus.class",
+      "constant_index": 340,
+      "before": "Shirokai • Casal \u0001",
+      "after": "Zorykai • Casal \u0001"
+    },
+    {
+      "entry": "dev/shirokai/daycare/ui/DaycareMenus.class",
+      "constant_index": 481,
+      "before": "Shirokai • Incubadora",
+      "after": "Zorykai • Incubadora"
+    },
+    {
+      "entry": "dev/shirokai/daycare/ui/ResourcePackController.class",
+      "constant_index": 91,
+      "before": "✦ Visual Shirokai Daycare: branco e ciano. Sem mod adicional.",
+      "after": "✦ Visual Zorykai Daycare: branco e ciano. Sem mod adicional."
+    },
+    {
+      "entry": "fabric.mod.json",
+      "field": "name",
+      "before": "Shirokai Daycare",
+      "after": "Zorykai Daycare"
+    },
+    {
+      "entry": "fabric.mod.json",
+      "field": "description",
+      "before": "Reprodução e incubação server-side Shirokai.",
+      "after": "Reprodução e incubação server-side Zorykai."
+    }
+  ],
+  "changed_jar_entries": [
+    "dev/shirokai/daycare/DaycareService.class",
+    "dev/shirokai/daycare/ShirokaiDaycare.class",
+    "dev/shirokai/daycare/config/Settings$Messages.class",
+    "dev/shirokai/daycare/config/Settings.class",
+    "dev/shirokai/daycare/ui/DaycareMenus.class",
+    "dev/shirokai/daycare/ui/ResourcePackController.class",
+    "fabric.mod.json"
+  ],
+  "checks": {
+    "same_entry_names_and_order": true,
+    "class_bytecode_and_all_post_constant_pool_bytes_identical": true,
+    "only_exact_visual_UTF8_string_constants_changed": true,
+    "mod_id_version_environment_entrypoints_dependencies_and_mixins_identical": true,
+    "all_other_jar_entry_bytes_identical": true,
+    "external_resource_pack_url_and_sha1_unchanged": true,
+    "nested_dependencies_unchanged": true,
+    "minecraft_text_formatter_white_bold_brand_gray_default_body": true,
+    "minecraft_text_formatter_existing_selected_green_preserved": true,
+    "dedicated_server_fabric_cobblemon_1_8_3_boot": true,
+    "breed_help_command_new_visual_prefix": true,
+    "generated_default_prefix_matches_patched_literal": true,
+    "repository_source_files_edited": false
+  },
+  "preserved_nonvisual_names": [
+    "dev/shirokai/... class/package paths",
+    "shirokai_daycare mod ID and namespace",
+    "shirokai.daycare.* permissions",
+    "shirokai_origin_language persisted key",
+    "shirokai-daycare/daycare.sqlite data location",
+    "SHIROKAI_INTEGRATION diagnostic marker",
+    "Shirokai Daycare: {} treinadores carregados console-only log",
+    "Configuração Shirokai inválida; arquivos preservados console-only startup log"
+  ],
+  "notes": [
+    "Existing external config messages.prefix overrides the new default. No external config is modified.",
+    "External resource-pack description is outside this JAR and remains untouched.",
+    "Existing styled menu text keeps original colors; unformatted default chat prefix is white bold with gray body; previously unbranded help uses uppercase fallback ✦ ZORYKAI."
+  ],
+  "checked_at_utc": "2026-11-17T00:04:32.356326+00:00"
+}
