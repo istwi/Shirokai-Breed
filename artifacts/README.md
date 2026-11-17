@@ -1,5 +1,13 @@
 # Shirokai Daycare — candidato 0.1.12
 
+## Zorykai com pacote combinado pelo servidor
+
+Há uma [correção local da variante Zorykai 0.1.12](zorykai-server-pack/README.md)
+para reconhecer o pacote combinado enviado pelo `server.properties` sem uma
+segunda oferta do Daycare. O diretório inclui JAR, instruções, checksum e escopo
+de validação. Exige configurar `resource-pack-id` e desativar apenas o envio
+pelo mod. Ainda requer homologação com jogador conectado; não é um release oficial.
+
 ## Downloads atuais
 
 - [Mod do servidor 0.1.12](shirokai-daycare-0.1.12-dev.jar)
