@@ -1,0 +1,68 @@
+{
+  "base_repository_commit": "ed5a967f9728530aac4c56bb6a79f02c4917fb3c",
+  "verified_at_utc": "2026-11-18T02:31:11.916158+00:00",
+  "input_sha256": "bcf361d485acfd9d21da05c213cfc0eda338414f77031bb3650a2dca103d3a18",
+  "output_sha256": "5cd57ccf388a6d242abb416fdde14ff59b3b64ecbe10913a11d73dfbdefefa76",
+  "version": "0.1.13-dev",
+  "profile_schema": 4,
+  "changed_entries": [
+    "dev/shirokai/daycare/DaycareService.class",
+    "dev/shirokai/daycare/ShirokaiDaycare.class",
+    "dev/shirokai/daycare/config/Settings$Messages.class",
+    "dev/shirokai/daycare/config/Settings.class",
+    "dev/shirokai/daycare/domain/TrainerState.class",
+    "dev/shirokai/daycare/integration/CobblemonGateway.class",
+    "dev/shirokai/daycare/storage/DaycareRepository.class",
+    "dev/shirokai/daycare/ui/DaycareMenus.class",
+    "fabric.mod.json",
+    "shirokai-daycare.mixins.json"
+  ],
+  "added_entries": [
+    "dev/shirokai/daycare/PcPolicy.class",
+    "dev/shirokai/daycare/RecoveryAccess.class",
+    "dev/shirokai/daycare/RecoveryHost.class",
+    "dev/shirokai/daycare/RecoveryLog$1.class",
+    "dev/shirokai/daycare/RecoveryLog.class",
+    "dev/shirokai/daycare/ReservationSafety.class",
+    "dev/shirokai/daycare/SlotRecovery.class",
+    "dev/shirokai/daycare/StorageSafety.class",
+    "dev/shirokai/daycare/mixin/PartyReservationMixin.class",
+    "dev/shirokai/daycare/mixin/PcReservationMixin.class",
+    "dev/shirokai/daycare/mixin/PlayerPartyReservationMixin.class"
+  ],
+  "unchanged_entry_count": 48,
+  "byte_identical_preserved_entries": [
+    "dev/shirokai/daycare/integration/BreedingRules.class",
+    "dev/shirokai/daycare/integration/EconomyGateway.class",
+    "dev/shirokai/daycare/ui/ResourcePackController.class",
+    "dev/shirokai/daycare/mixin/ResourcePackStatusMixin.class",
+    "dev/shirokai/daycare/mixin/ServerPackSessionMixin.class",
+    "shirokai-ui-pack.json",
+    "shirokai-daycare-refmap.json",
+    "META-INF/jars/sqlite-jdbc-3.49.1.0.jar"
+  ],
+  "archive_integrity": "passed",
+  "synthetic_sqlite_integrity": "passed",
+  "schema3_migration": "passed, purchased breed/incubator slots preserved",
+  "live_server_assertions_passed": 669,
+  "diagnostics": "403 JSON records verified; capture, identifiers, rotation, retention and unrelated-file preservation passed",
+  "observed_server_log_actions": [
+    "ADMIN_RECOVER_REQUEST",
+    "BLOCKED_STORE_SET",
+    "BLOCKED_STORE_SWAP",
+    "DIAGNOSTICS_STARTED",
+    "JOURNAL_WRITE_REQUEST",
+    "RESET_SLOT_REQUEST",
+    "SERVER_LOG",
+    "TEST_RECOVER_EVENT"
+  ],
+  "limits": [
+    "No real player login or GUI/client rendering",
+    "No multiplayer concurrency or original full-modpack reproduction",
+    "Impactor/LuckPerms APIs for linking only in the validation copy; no economy provider or real LuckPerms permission decisions tested",
+    "Logical interruption after durable write and real SQLite connection failure tested; no actual OS kill/power loss",
+    "Uploaded player data was not modified or included"
+  ],
+  "build_sources": "src/recovery/java",
+  "reproduce": "tests/recovery/README.md"
+}

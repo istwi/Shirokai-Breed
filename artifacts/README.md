@@ -1,5 +1,12 @@
 # Shirokai Daycare — candidato 0.1.12
 
+## Zorykai 0.1.13-dev — recuperação e saídas para o PC
+
+[Novo candidato Zorykai](zorykai-recovery/README.md): comando administrativo
+`resetslot`, saídas exclusivamente para o PC, proteções de custódia e histórico
+local de erros/ações. Confira as instruções de backup e migração para schema 4
+antes de instalar. O pacote combinado da branch foi preservado.
+
 ## Zorykai com pacote combinado pelo servidor
 
 Há uma [correção local da variante Zorykai 0.1.12](zorykai-server-pack/README.md)
