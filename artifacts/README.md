@@ -1,4 +1,14 @@
-# Shirokai Daycare — candidato 0.1.12
+# Shirokai / Zorykai Daycare — artefatos
+
+## Zorykai 0.1.14-dev — candidato mais recente
+
+[Baixar o JAR](zorykai-automation/shirokai-daycare-0.1.14-dev-zorykai-automation.jar) · [Instalação, VIP e testes](zorykai-automation/README.md)
+
+Envio automático dos ovos, fila de um ovo por casal quando a chocadeira estiver
+cheia, ações sem fechamento automático do menu e redução VIP de 25% nos tempos
+(20 minutos passam a 15). Preserva as correções da 0.1.13 e o pacote Zorykai.
+Fazer backup antes de instalar: os perfis são migrados para schema 5.
+
 
 ## Zorykai 0.1.13-dev — recuperação e saídas para o PC
 
@@ -15,7 +25,7 @@ segunda oferta do Daycare. O diretório inclui JAR, instruções, checksum e esc
 de validação. Exige configurar `resource-pack-id` e desativar apenas o envio
 pelo mod. Ainda requer homologação com jogador conectado; não é um release oficial.
 
-## Downloads atuais
+## Artefatos anteriores e pacote de recursos
 
 - [Mod do servidor 0.1.12](shirokai-daycare-0.1.12-dev.jar)
 - [Pacote branco e ciano 0.1.12](shirokai-daycare-ui-0.1.12.zip)

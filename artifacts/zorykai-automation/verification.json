@@ -1,0 +1,13 @@
+{
+  "version": "0.1.14-dev",
+  "base_branch": "zorykai",
+  "base_commit": "ba523aee0e8b16cc0eb637035f6ac11a5372dcf0",
+  "base_sha256": "5cd57ccf388a6d242abb416fdde14ff59b3b64ecbe10913a11d73dfbdefefa76",
+  "sha256": "28b139772f88393e92c228c3ea2b0155f09f308e30ef17ea8f2df8d1a57915ac",
+  "preserved_resource_entries": 5,
+  "same_metadata_except_version": true,
+  "test_fixture_in_production_jar": false,
+  "data_schema": 5,
+  "human_client_test": false,
+  "production_server_modified": false
+}
