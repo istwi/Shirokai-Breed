@@ -1,15 +1,10 @@
-# Pacote combinado Zorykai
+# Pacote unificado Zorykai
 
-ZIP fornecido pelo administrador, preservado byte a byte. Inclui os 47 recursos do Daycare UI 0.1.12 sem alterações, além das outras texturas do pacote. pack.mcmeta na raiz, formato 34 (Minecraft 1.21.1).
+Pacote anterior + Vales e Cristais MC1.21.1. Todos os2019 arquivos anteriores foram preservados byte a byte; adicionados14 arquivos de modelos/texturas, incluindo overrides de papel7101–7106 e retorno ao papel normal em7107. Um só ZIP, com `pack.mcmeta` na raiz (formato34). Metadados originais preservados.
 
-Em server.properties:
+URL: https://github.com/istwi/Shirokai-Breed/raw/refs/heads/zorykai/artifacts/zorykai-resourcepack/Zorykai.zip
+SHA-1: `44487b383398cd6f827750295bd5b026f436d1b9`
 
-```properties
-resource-pack=https://github.com/istwi/Shirokai-Breed/raw/refs/heads/zorykai/artifacts/zorykai-resourcepack/Zorykai.zip
-resource-pack-sha1=5422616c4c6b958519d8567c7edd577756fce9b9
-resource-pack-id=cd77918b-6448-4bb4-8c7f-de4fda6a318a
-```
+Para o JSON enviado pelo administrador: [config-daycare-exemplo.json](config-daycare-exemplo.json), com URL e hash atualizados; demais valores preservados. Se já usa envio do pacote por `server.properties`, preserve o mecanismo configurado e atualize seu `resource-pack-sha1` para o hash acima. Evite enviar o mesmo pack por dois mecanismos; a configuração de exemplo mantém `resourcePackEnabled=true`, conforme fornecido.
 
-Com o JAR artifacts/zorykai-server-pack/shirokai-daycare-0.1.12-dev-zorykai-server-pack.jar, use resourcePackEnabled=false em config/shirokai-daycare/config.json para o mod reconhecer o pacote do servidor sem enviar um segundo pacote. Preserve as outras configurações. Reinicie o servidor e reconecte.
-
-Integridade ZIP e presença/igualdade dos recursos do Breed verificadas. Sem teste com cliente Minecraft nesta publicação.
+Validação: CRC do ZIP, sintaxe dos JSONs, assinaturas PNG e igualdade de todos os recursos originais/adicionados. Sem teste visual em cliente Minecraft. A textura de cada vale/cristal depende de o item usar o CustomModelData correspondente. Não houve mudança no mod ou nos itens do servidor.

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "resourcePackEnabled": true,
+  "resourcePackUrl": "https://github.com/istwi/Shirokai-Breed/raw/refs/heads/zorykai/artifacts/zorykai-resourcepack/Zorykai.zip",
+  "resourcePackSha1": "44487b383398cd6f827750295bd5b026f436d1b9",
+  "freeBreedSlots": 1,
+  "freeIncubatorSlots": 1,
+  "maxSlots": 6,
+  "breedingSeconds": 1200,
+  "replacementCooldownSeconds": 300,
+  "checkpointSeconds": 15,
+  "vipDiscount": 0.2,
+  "notifications": true,
+  "administrativeLogs": true,
+  "vipPermission": "shirokai.daycare.vip",
+  "usePermission": "shirokai.daycare.use",
+  "adminPermission": "shirokai.daycare.admin",
+  "currency": "impactor:dollars",
+  "fullIncubator": "PAUSE"
+}
